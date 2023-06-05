@@ -32,7 +32,7 @@ const AdmitPatient = () => {
 
         try{
 
-            await axios.put("http://localhost:5500/admitPatient/" + wardName, admitP)
+            await axios.put("https://warden-backend.up.railway.app/admitPatient/" + wardName, admitP)
             navigate(`/viewPatients/${wardName}`)
 
         } catch(err){

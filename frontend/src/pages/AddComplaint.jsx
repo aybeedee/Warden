@@ -30,7 +30,7 @@ const AddComplaint = () => {
 
         try{
 
-            await axios.post("http://localhost:5500/addNewComplaint/" + patientNo, newComplaint)
+            await axios.post("https://warden-backend.up.railway.app/addNewComplaint/" + patientNo, newComplaint)
             navigate(`/Complaints/${patientNo}`)
 
         } catch(err){

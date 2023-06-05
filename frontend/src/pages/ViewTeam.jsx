@@ -21,7 +21,7 @@ const ViewTeam = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/team/" + consultantNo)
+                const res = await axios.get("https://warden-backend.up.railway.app/team/" + consultantNo)
                 setTeam(res.data);
 
             } catch(err) {

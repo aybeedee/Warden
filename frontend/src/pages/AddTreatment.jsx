@@ -42,7 +42,7 @@ const AddTreatment = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/treatments/" + complaintCode)
+                const res = await axios.get("https://warden-backend.up.railway.app/treatments/" + complaintCode)
                 
                 if (res.data && res.data.length > 0) {
                     
@@ -65,7 +65,7 @@ const AddTreatment = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/getPatientNo/" + complaintCode)
+                const res = await axios.get("https://warden-backend.up.railway.app/getPatientNo/" + complaintCode)
                 
                 setPatientFound(res.data)
 
@@ -94,7 +94,7 @@ const AddTreatment = () => {
 
                 try{
 
-                    await axios.post("http://localhost:5500/addNewTreatment/" + complaintCode, newTreatment)
+                    await axios.post("https://warden-backend.up.railway.app/addNewTreatment/" + complaintCode, newTreatment)
         
                 } catch(err){
         
@@ -108,7 +108,7 @@ const AddTreatment = () => {
                         console.log(p.patientNo)
                     ))
 
-                    await axios.put("http://localhost:5500/addPatientDoctor/" + newTreatment.doctorNo, {patientNo: patientFound[0].patientNo})
+                    await axios.put("https://warden-backend.up.railway.app/addPatientDoctor/" + newTreatment.doctorNo, {patientNo: patientFound[0].patientNo})
         
                 } catch(err){
         
@@ -128,7 +128,7 @@ const AddTreatment = () => {
 
             try{
 
-                await axios.post("http://localhost:5500/addNewTreatment/" + complaintCode, newTreatment)
+                await axios.post("https://warden-backend.up.railway.app/addNewTreatment/" + complaintCode, newTreatment)
     
             } catch(err){
     
@@ -137,7 +137,7 @@ const AddTreatment = () => {
 
             try{
 
-                await axios.put("http://localhost:5500/addPatientDoctor/" + newTreatment.doctorNo, {patientNo: patientFound[0].patientNo})
+                await axios.put("https://warden-backend.up.railway.app/addPatientDoctor/" + newTreatment.doctorNo, {patientNo: patientFound[0].patientNo})
     
             } catch(err){
     

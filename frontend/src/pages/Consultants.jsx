@@ -16,7 +16,7 @@ const Consultants = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/consultants")
+                const res = await axios.get("https://warden-backend.up.railway.app/consultants")
                 console.log(res)
                 setConsultants(res.data);
 
