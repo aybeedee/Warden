@@ -3,6 +3,7 @@ import mysql from 'mysql'
 import cors from 'cors'
 const app = express()
 
+const PORT = 5500;
 const db = mysql.createConnection({
 
     host:"localhost",
@@ -386,7 +387,7 @@ app.put("/addPatientDoctor/:doctorNo", (req, res)=> {
     })
 })
 
-app.listen(5500, ()=>{
+app.listen((process.env.PORT || PORT), ()=>{
 
     console.log("Connected to backend!");
 })
