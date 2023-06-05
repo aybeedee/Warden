@@ -32,7 +32,7 @@ const AddPerformance = () => {
 
         try{
 
-            await axios.post("http://localhost:5500/performances", newPerformance)
+            await axios.post("https://warden-backend.up.railway.app/performances", newPerformance)
             navigate(`/Performance/${consultantNo}`)
 
         } catch(err){

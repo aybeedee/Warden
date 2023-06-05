@@ -20,7 +20,7 @@ const Complaints = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/complaints/" + patientNo)
+                const res = await axios.get("https://warden-backend.up.railway.app/complaints/" + patientNo)
                 setComplaints(res.data);
 
             } catch(err) {

@@ -20,7 +20,7 @@ const ViewNurses = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/nurses/" + wardName)
+                const res = await axios.get("https://warden-backend.up.railway.app/nurses/" + wardName)
                 setNurses(res.data);
 
             } catch(err) {

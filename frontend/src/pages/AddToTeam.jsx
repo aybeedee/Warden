@@ -30,7 +30,7 @@ const AddToTeam = () => {
 
         try{
 
-            await axios.put("http://localhost:5500/addToTeam/" + consultantNo, addDoctor)
+            await axios.put("https://warden-backend.up.railway.app/addToTeam/" + consultantNo, addDoctor)
             navigate(`/viewTeam/${consultantNo}`)
 
         } catch(err){

@@ -16,7 +16,7 @@ const Patients = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/patients")
+                const res = await axios.get("https://warden-backend.up.railway.app/patients")
                 console.log(res)
                 setPatients(res.data);
 

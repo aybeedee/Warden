@@ -21,7 +21,7 @@ const Performance = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/performance/" + consultantNo)
+                const res = await axios.get("https://warden-backend.up.railway.app/performance/" + consultantNo)
                 console.log(res)
                 setPerformance(res.data);
 

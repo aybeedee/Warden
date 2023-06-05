@@ -20,7 +20,7 @@ const ViewExperience = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/experience/" + consultantNo)
+                const res = await axios.get("https://warden-backend.up.railway.app/experience/" + consultantNo)
                 console.log(res)
                 setExperience(res.data);
 

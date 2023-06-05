@@ -21,7 +21,7 @@ const ViewPatients = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/patients/" + wardName)
+                const res = await axios.get("https://warden-backend.up.railway.app/patients" + wardName)
                 setPatients(res.data);
 
             } catch(err) {
@@ -38,7 +38,7 @@ const ViewPatients = () => {
 
         try{
 
-            await axios.put("http://localhost:5500/dischargePatient/" + pNo)
+            await axios.put("https://warden-backend.up.railway.app/dischargePatient/" + pNo)
             window.location.reload()
 
         } catch (err) {

@@ -20,7 +20,7 @@ const Treatments = () => {
 
             try{
 
-                const res = await axios.get("http://localhost:5500/treatments/" + complaintCode)
+                const res = await axios.get("https://warden-backend.up.railway.app/treatments/" + complaintCode)
                 setTreatments(res.data);
 
             } catch(err) {

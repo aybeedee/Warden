@@ -24,7 +24,7 @@ const AddWards = () => {
 
         try{
 
-            await axios.post("http://localhost:5500/wards", newWard)
+            await axios.post("https://warden-backend.up.railway.app/wards", newWard)
             navigate("/")
 
         } catch(err){

@@ -28,7 +28,7 @@ const UpdateWard = () => {
 
         try{
 
-            await axios.put("http://localhost:5500/wards/"+wardWardName, newWard)
+            await axios.put("https://warden-backend.up.railway.app/wards/"+wardWardName, newWard)
             navigate("/")
 
         } catch(err){
