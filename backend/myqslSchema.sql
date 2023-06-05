@@ -291,3 +291,5 @@ insert into treatment values(5008, '2022-12-02', '2022-12-14', 4007, 1007, 'asda
 update treatment set startDate = '2022-04-11' where treatmentCode = 5006;
 
 
+select * from patient
+

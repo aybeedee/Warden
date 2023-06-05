@@ -6,10 +6,10 @@ const app = express()
 const PORT = 5601;
 const db = mysql.createConnection({
 
-    host:"containers-us-west-157.railway.app",
+    host:"abc",
     user:"root",
-    password:"kMVfQe2d9o4OOOYrnR0V",
-    database:"railway"
+    password:"123",
+    database:"not-railway"
 })
 
 app.use(express.json())
