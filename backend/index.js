@@ -3,13 +3,13 @@ import mysql from 'mysql'
 import cors from 'cors'
 const app = express()
 
-const PORT = 5500;
+const PORT = 5601;
 const db = mysql.createConnection({
 
-    host:"localhost",
+    host:"containers-us-west-157.railway.app",
     user:"root",
-    password:"MySQL123",
-    database:"test"
+    password:"kMVfQe2d9o4OOOYrnR0V",
+    database:"railway"
 })
 
 app.use(express.json())
