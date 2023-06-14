@@ -16,7 +16,7 @@ const Wards = () => {
 
             try{
 
-                const res = await axios.get("https://warden-backend.up.railway.app/wards")
+                const res = await axios.get("https://nice-pink-coral-tam.cyclic.app/wards")
                 console.log(res)
                 setWards(res.data);
 
@@ -34,7 +34,7 @@ const Wards = () => {
 
         try{
 
-            await axios.delete("https://warden-backend.up.railway.app/wards/" + name)
+            await axios.delete("https://nice-pink-coral-tam.cyclic.app/wards/" + name)
             window.location.reload()
 
         } catch (err) {

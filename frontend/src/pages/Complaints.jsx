@@ -20,7 +20,7 @@ const Complaints = () => {
 
             try{
 
-                const res = await axios.get("https://warden-backend.up.railway.app/complaints/" + patientNo)
+                const res = await axios.get("https://nice-pink-coral-tam.cyclic.app/complaints/" + patientNo)
                 setComplaints(res.data);
 
             } catch(err) {

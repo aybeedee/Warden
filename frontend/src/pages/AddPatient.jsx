@@ -27,7 +27,7 @@ const AddPatient = () => {
 
         try{
 
-            await axios.post("https://warden-backend.up.railway.app/addNewPatient", newPatient)
+            await axios.post("https://nice-pink-coral-tam.cyclic.app/addNewPatient", newPatient)
             navigate("/Patients")
 
         } catch(err){

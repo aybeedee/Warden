@@ -16,7 +16,7 @@ const Patients = () => {
 
             try{
 
-                const res = await axios.get("https://warden-backend.up.railway.app/patients")
+                const res = await axios.get("https://nice-pink-coral-tam.cyclic.app/patients")
                 console.log(res)
                 setPatients(res.data);
 

@@ -20,7 +20,7 @@ const ViewExperience = () => {
 
             try{
 
-                const res = await axios.get("https://warden-backend.up.railway.app/experience/" + consultantNo)
+                const res = await axios.get("https://nice-pink-coral-tam.cyclic.app/experience/" + consultantNo)
                 console.log(res)
                 setExperience(res.data);
 

@@ -21,7 +21,7 @@ const ViewPatients = () => {
 
             try{
 
-                const res = await axios.get("https://warden-backend.up.railway.app/patients" + wardName)
+                const res = await axios.get("https://nice-pink-coral-tam.cyclic.app/patients" + wardName)
                 setPatients(res.data);
 
             } catch(err) {
@@ -38,7 +38,7 @@ const ViewPatients = () => {
 
         try{
 
-            await axios.put("https://warden-backend.up.railway.app/dischargePatient/" + pNo)
+            await axios.put("https://nice-pink-coral-tam.cyclic.app/dischargePatient/" + pNo)
             window.location.reload()
 
         } catch (err) {

@@ -32,7 +32,7 @@ const AddPerformance = () => {
 
         try{
 
-            await axios.post("https://warden-backend.up.railway.app/performances", newPerformance)
+            await axios.post("https://nice-pink-coral-tam.cyclic.app/performances", newPerformance)
             navigate(`/Performance/${consultantNo}`)
 
         } catch(err){
